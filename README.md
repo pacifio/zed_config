@@ -1,2 +1,3 @@
-# zed_config
-my zed config
+## Zed editor setup
+
+My personal zed editor setup
