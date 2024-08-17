@@ -29,7 +29,7 @@
 	"gutter": {
 		"code_actions": false,
 		"folds": false,
-		"line_numbers": false,
+		"line_numbers": true,
 		"runnables": false
 	}
 }
