@@ -1,16 +1,29 @@
 {
-  "theme": "Summercamp",
-  "ui_font_size": 15,
-  "buffer_font_size": 14.5,
-  "buffer_font_family": "JetBrains Mono",
-  "cursor_blink": true,
-  "buffer_line_height": {
-    "custom": 1.1
-  },
-  "format_on_save": "off",
-  "formatter": "prettier",
-  "show_whitespaces": "all",
-  "show_wrap_guides": true,
-  "tab_size": 2,
-  "hard_tabs": true
+	"features": {
+		"inline_completion_provider": "none"
+	},
+	"theme": "Vesper",
+	"ui_font_size": 15,
+	"buffer_font_size": 14.5,
+	"buffer_font_family": "JetBrains Mono",
+	"cursor_blink": true,
+	"buffer_line_height": {
+		"custom": 1.1
+	},
+	"format_on_save": "off",
+	"formatter": "prettier",
+	"show_whitespaces": "all",
+	"show_wrap_guides": true,
+	"tab_size": 2,
+	"hard_tabs": true,
+	"tab_bar": {
+		"show": false,
+		"show_nav_history_buttons": false
+	},
+	"toolbar": {
+		"breadcrumbs": false,
+		"quick_actions": false,
+		"selections_menu": false
+	},
+	"auto_update": true
 }
