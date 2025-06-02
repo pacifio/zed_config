@@ -1,19 +1,39 @@
 {
-	"features": {
-		"inline_completion_provider": "none"
+	"edit_predictions": {
+		"mode": "subtle",
+		"copilot": {
+			"proxy": null,
+			"proxy_no_verify": null
+		},
+		"enabled_in_text_threads": false
 	},
-	"theme": "Vesper",
-	"ui_font_size": 15,
-	"buffer_font_size": 14.5,
+	"show_edit_predictions": false,
+	"terminal": {
+		"dock": "bottom"
+	},
+	"agent": {
+		"default_model": {
+			"provider": "zed.dev",
+			"model": "claude-3-7-sonnet-latest"
+		},
+		"version": "2"
+	},
+	"theme": "Rich Vesper",
+	"hide_mouse": "on_typing_and_movement",
+	"ui_font_size": 14,
+	"buffer_font_size": 15,
 	"buffer_font_family": "JetBrains Mono",
-	"cursor_blink": true,
+	"cursor_blink": false,
 	"buffer_line_height": {
-		"custom": 1.1
+		"custom": 1.0
 	},
 	"format_on_save": "off",
-	"formatter": "prettier",
-	"show_whitespaces": "all",
+	"formatter": "language_server",
+	"show_whitespaces": "none",
 	"show_wrap_guides": true,
+	"wrap_guides": [
+		90
+	],
 	"tab_size": 2,
 	"hard_tabs": true,
 	"tab_bar": {
@@ -25,11 +45,54 @@
 		"quick_actions": false,
 		"selections_menu": false
 	},
+	"scrollbar": {
+		"show": "never"
+	},
 	"auto_update": true,
+	"indent_guides": {
+		"enabled": true,
+		"coloring": "indent_aware"
+	},
 	"gutter": {
 		"code_actions": false,
 		"folds": false,
 		"line_numbers": true,
 		"runnables": false
-	}
+	},
+	"git": {
+		"git_gutter": "tracked_files",
+		"inline_blame": {
+			"enabled": true
+		}
+	},
+	"languages": {
+		"Ruby": {
+			"formatter": "language_server",
+			"format_on_save": "on"
+		},
+		"Zig": {
+			"tab_size": 4
+		}
+	},
+	"lsp": {
+		"solargraph": {
+			"initialization_options": {
+				"diagnostics": true,
+				"formatting": true
+			},
+			"settings": {
+				"use_bundler": false
+			}
+		},
+		"protobuf-language-server": {
+			"binary": {
+				"path": "buf",
+				"arguments": [
+					"beta",
+					"lsp"
+				]
+			}
+		}
+	},
+	"soft_wrap": "prefer_line"
 }
