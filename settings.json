@@ -1,36 +1,60 @@
 {
+	"vim_mode": false,
+	"current_line_highlight": "all",
+	"unnecessary_code_fade": 0.5,
+	"icon_theme": {
+		"mode": "dark",
+		"light": "Zed (Default)",
+		"dark": "Zed (Default)",
+	},
+	"telemetry": {
+		"diagnostics": true,
+		"metrics": true,
+	},
+	"base_keymap": "VSCode",
+	"status_bar": {
+		"experimental.show": false,
+	},
+	"minimap": {
+		"show": "always",
+	},
+	"cursor_shape": "bar",
+	"file_types": {},
 	"edit_predictions": {
 		"mode": "subtle",
 		"copilot": {
 			"proxy": null,
-			"proxy_no_verify": null
+			"proxy_no_verify": null,
 		},
-		"enabled_in_text_threads": false
+		"enabled_in_text_threads": false,
 	},
 	"show_edit_predictions": false,
 	"terminal": {
-		"dock": "bottom"
+		"dock": "bottom",
 	},
 	"agent": {
 		"default_model": {
 			"provider": "zed.dev",
-			"model": "claude-3-7-sonnet-latest"
+			"model": "claude-3-7-sonnet-latest",
 		},
-		"version": "2"
 	},
-	"theme": "Rich Vesper",
+	"theme": {
+		"mode": "dark",
+		"light": "Gruvbox Light",
+		"dark": "Zen Dark",
+	},
 	"hide_mouse": "on_typing_and_movement",
 	"ui_font_size": 14,
-	"buffer_font_size": 15,
+	"buffer_font_size": 14.5,
 	"buffer_font_family": "JetBrains Mono",
 	"cursor_blink": false,
 	"buffer_line_height": {
-		"custom": 1.0
+		"custom": 1.0,
 	},
 	"format_on_save": "off",
 	"formatter": "language_server",
 	"show_whitespaces": "none",
-	"show_wrap_guides": true,
+	"show_wrap_guides": false,
 	"wrap_guides": [
 		90
 	],
@@ -38,61 +62,39 @@
 	"hard_tabs": true,
 	"tab_bar": {
 		"show": false,
-		"show_nav_history_buttons": false
+		"show_nav_history_buttons": false,
 	},
 	"toolbar": {
 		"breadcrumbs": false,
 		"quick_actions": false,
-		"selections_menu": false
+		"selections_menu": false,
 	},
 	"scrollbar": {
-		"show": "never"
+		"axes": {
+			"horizontal": false,
+		},
+		"show": "never",
 	},
 	"auto_update": true,
 	"indent_guides": {
 		"enabled": true,
-		"coloring": "indent_aware"
+		"coloring": "fixed",
 	},
 	"gutter": {
-		"code_actions": false,
 		"folds": false,
 		"line_numbers": true,
-		"runnables": false
+		"runnables": false,
 	},
 	"git": {
 		"git_gutter": "tracked_files",
 		"inline_blame": {
-			"enabled": true
-		}
+			"enabled": false,
+		},
 	},
 	"languages": {
-		"Ruby": {
-			"formatter": "language_server",
-			"format_on_save": "on"
+		"Python": {
+			"tab_size": 4,
 		},
-		"Zig": {
-			"tab_size": 4
-		}
 	},
-	"lsp": {
-		"solargraph": {
-			"initialization_options": {
-				"diagnostics": true,
-				"formatting": true
-			},
-			"settings": {
-				"use_bundler": false
-			}
-		},
-		"protobuf-language-server": {
-			"binary": {
-				"path": "buf",
-				"arguments": [
-					"beta",
-					"lsp"
-				]
-			}
-		}
-	},
-	"soft_wrap": "prefer_line"
+	"soft_wrap": "prefer_line",
 }
